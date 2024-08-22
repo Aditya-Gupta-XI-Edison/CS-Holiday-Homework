@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAM 5</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: rgb(255, 255, 255);
+        }
+
+        div {
+            background: beige;
+            border-radius: 10px;
+            width: 70%;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        .code {
+            text-align: left;
+            background-color: White;
+            font-family: sans serif;
+            padding: 10px;
+            color: white;
+            width: 80%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <center><br>
+        <a href="index.html"><- Go back</a>
+                <br><br>
+                <div>
+                    <h3>Q. Write code to check if the number is Palindrome or not.</h3>
+                    <br>
+                    <div class="code">
+                        <b>
+                            <pre>
+data = input("Enter Your Number:").strip().upper()
+data_reversed = data[: : -1]
+
+if data == data_reversed:
+    print("The User Input Is A Palindrome.")
+else:
+    print("The User Input Is Not A Palindrome.")
+</pre>
+
+                        </b>
+                    </div>
+
+                </div>
+
+    </center>
+</body>
+
+</html>
