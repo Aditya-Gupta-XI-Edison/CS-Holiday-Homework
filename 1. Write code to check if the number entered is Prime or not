@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAM 1</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: rgb(0, 0, 0);
+        }
+
+        div {
+            background: beige;
+            border-radius: 10px;
+            width: 70%;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        .code{
+            text-align:left;
+            background-color:White;
+            font-family: monospace;
+            padding:10px;
+            color:white;
+            width:80%;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <center><br>
+        <a href="index.html"><- Go back</a>
+        <br><br>
+        <div>
+            <h3>Q. Write code to check if the number entered is Prime or not.</h3>
+            <br>
+            <div class="code">
+                <b>
+                    <pre>
+num = int(input("Enter Your Number:"))
+
+count = 1
+
+IsNotPrime = True
+
+while count <= num:
+    if (num % count == 0) and ((count == 1) or (count == num)) == False:
+        print("The number is divisble by ", count)
+        isNotprime = False
+
+    count = count + 1
+
+if IsNotPrime == True:
+    print("The Number You Entered Is Not A Prime.")
+else:
+    print("The Number You Entered Is A Prime.")
+</pre>
+                </b>
+            </div>
+
+        </div>
+
+    </center>
+</body>
+</html>
