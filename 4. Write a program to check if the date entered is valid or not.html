@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAM 4</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: rgb(255, 255, 255);
+        }
+
+        div {
+            background: beige;
+            border-radius: 10px;
+            width: 70%;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        .code {
+            text-align: left;
+            background-color: White;
+            font-family: sans serif;
+            padding: 10px;
+            color: white;
+            width: 80%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <center><br>
+        <a href="index.html"><- Go back</a>
+                <br><br>
+                <div>
+                    <h3>Q. Write a program to check if the date entered is valid or not.</h3>
+                    <br>
+                    <div class="code">
+                        <b>
+                            <pre><code>
+day = int(input("Enter a valid day: "))
+month = int(input("Enter a valid month: "))
+year = int(input("Enter a valid year: "))
+day_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+if year <= 0 or month <= 0 or day_in_month <= 0:
+    print("The Entered Date Is Not Valid.")
+
+if year >= 1 or month <= 12 or day_in_month <= 31:
+    print("The Entered Date Is Valid.")
+
+if day == 29:
+    print("The Entered Date Is A Leap Year.")
+  </code></pre>
+                        </b>
+                    </div>
+
+                </div>
+
+    </center>
+</body>
+
+</html>
