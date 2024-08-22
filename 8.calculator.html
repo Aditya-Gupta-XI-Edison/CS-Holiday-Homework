@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAM 8</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: rgb(255, 255, 255);
+        }
+
+        div {
+            background: beige;
+            border-radius: 10px;
+            width: 70%;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        .code {
+            text-align: left;
+            background-color: white;
+            font-family: sans serif;
+            padding: 10px;
+            color: white;
+            width: 80%;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <center><br>
+        <a href="index.html"><- Go back</a>
+                <br><br>
+                <div>
+                    <h3>Q. Write code to generate a calculator.</h3>
+                    <br>
+                    <div class="code">
+                        <b>
+<pre><code>
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+while True :
+	operation = input("Select operation (+, -, *, /): ")
+	if operation in "+-*/" :
+		break
+	else:
+		print("The symbol you entered is invalid. Please re try.")
+
+if operation == '+':
+    print(num1 + num2)
+elif operation == '-':
+    print(num1 - num2)
+elif operation == '*':
+    print(num1 * num2)
+elif operation == '/':
+    print(num1 / num2)
+  </code></pre>
+                        </b>
+                    </div>
+
+                </div>
+
+    </center>
+</body>
+
+</html>
