@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            background: rgb(255, 255, 255);
+            background: rgb(152, 251, 152);
         }
 
         div {
@@ -20,7 +20,7 @@
 
         .code{
             text-align:left;
-            background-color:White;
+            background-color:black;
             font-family: monospace;
             padding:10px;
             color:white;
@@ -30,9 +30,34 @@
 
     </style>
 </head>
-    
 <body>
-    
+    a href="index.html"><- Go back</a>
+                <br><br>
+                <div>
+                    <h3>Q. Write a program to generate Fibonacci Series.</h3>
+                    <br>
+                    <div class="code">
+                        <b>
+                            <pre>
+limit = int(input("Enter The Limit of Fibonacci Series: "))
+series = [0, 1]
+
+count = 0
+
+while count < limit:
+    next_num = series[-1] + series[-2]
+    series.append(next_num)
+    count += 1
+
+print(series)
+
+</pre>
+
+                        </b>
+                    </div>
+
+                </div>
+
     <center><br>
         <a href="index.html"><- Go back</a>
         <br><br>
